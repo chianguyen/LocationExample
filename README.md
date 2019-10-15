@@ -31,9 +31,7 @@
    
    So here it repeated the *St. Charles* twice.
    To remove that, go to line *250*: 
-   
-   ```result = address.getAddressLine(0) + ", " + address.locality
-   ```
+   ```result = address.getAddressLine(0) + ", " + address.locality```
    Remove the ``` + ", " + address.locality ```
    So you get ```result = address.getAddressLine(0)```
     which will remove the excessive *St. Charles*.
