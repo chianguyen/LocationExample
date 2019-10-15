@@ -1,3 +1,5 @@
+# MAKE SURE YOU READ THIS 
+
 # LocationExample
 
   Thanks to these guys:
