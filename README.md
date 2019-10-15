@@ -21,3 +21,21 @@
 
     <!--Allow location-->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+    
+   # Note: 
+   When I pressed the button, it gave me: 
+   *XXXX Illinois Ave, St.Charles, IL 60174, USA, St. Charles*
+   
+   (I put XXXX for privacy matter)
+   
+   So here it repeated the *St. Charles* twice.
+   To remove that, go to line *250*: 
+   
+   ```result = address.getAddressLine(0) + ", " + address.locality
+   ```
+   Remove the ``` + ", " + address.locality ```
+   So you get ```result = address.getAddressLine(0)```
+    which will remove the excessive *St. Charles*.
+    
+   But keep in mind that since it's the locality, it helps with the accuracy of the information. 
